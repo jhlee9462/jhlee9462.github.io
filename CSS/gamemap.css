@@ -3,7 +3,6 @@
 /* 게임 플레이 화면 */
 .play-ground {
     width: 70%;
-    min-width: 1100px;
     height: 700px;
     background: #000;
     position: relative;
