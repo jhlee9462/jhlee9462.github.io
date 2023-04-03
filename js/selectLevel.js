@@ -38,4 +38,16 @@ export default function selectLevel() {
         }
     }
 
+    /* 선택된 캐릭터 기반으로 이미지 변경 */
+    const selectedChar = window.localStorage.getItem('character');
+    const $character = document.getElementById('bobby');
+
+    switch (selectedChar) {
+        case 'url("../img/icon/bubby06.png")':
+            $character.style.backgroundImage = 'url(../img/icon/bubby01.png)';
+            break;
+        case 'url("../img/icon/Kirby_right.png")':
+            $character.style.background = 'url(../img/icon/Kirby_left.png) no-repeat center / cover';
+            break;
+    }
 }
